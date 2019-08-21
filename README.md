@@ -12,5 +12,6 @@ The project contains the following features:
 
 1) User can edit text, text color, and BG color
 2) BG color field will check and sanitize if its a valid hexcolor
+3) Text string is reformatted if spaces are included to pass to URL
 
 Front-end bootstrapped with create-react-app, Material-ui for user interface.

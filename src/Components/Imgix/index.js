@@ -42,9 +42,7 @@ class Imgix extends Component {
 
         return (
             <div>
-                Imgix
                 <img className='imgix-image' src={imgUrl} />
-                <button onClick={() => console.log(this.props)}>Click</button>
             </div>
         );
     }
