@@ -38,11 +38,11 @@ class Imgix extends Component {
 
     render() {
 
-        const imgUrl = 'http://assets.imgix.net/examples/butterfly.jpg?bb&w=640&txtalign=center%2Cmiddle&txtsize=48&bm=normal&balph=50' + this.state.text + this.state.color + this.state.textColor ;
+        const imgUrl = 'https://assets.imgix.net/examples/butterfly.jpg?bb&w=640&txtalign=center%2Cmiddle&txtsize=48&bm=normal&balph=50' + this.state.text + this.state.color + this.state.textColor ;
 
         return (
             <div>
-                <img className='imgix-image' src={imgUrl} />
+                <img alt="imgix" className='imgix-image' src={imgUrl} />
             </div>
         );
     }

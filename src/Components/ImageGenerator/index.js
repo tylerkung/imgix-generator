@@ -43,7 +43,6 @@ const ImageGenerator = () => {
     }
     const handleColorChange = (e) => {
         var c = e.target.value.match(/[0-9a-f]{6}$/i);
-        console.log(c);
         if (c == null && e.target.value.length > 0){
             setBgColorError(true);
         } else{
@@ -53,7 +52,6 @@ const ImageGenerator = () => {
     }
     const validateHexColor = (color) => {
         if (bgColorError){
-            console.log('not valid');
             return '';
         }
         if (color[0] === '#'){
@@ -100,7 +98,7 @@ const ImageGenerator = () => {
                         <TextField
                             error={bgColorError}
                             id="color"
-                            label="Color"
+                            label="Background Color"
                             className={classes.textField}
                             value={colorValue}
                             onChange={handleColorChange}
